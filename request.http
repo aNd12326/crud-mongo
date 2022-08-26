@@ -1,0 +1,29 @@
+### GET ALL USERS
+GET http://localhost:3001/api/users
+
+### GET BY ID
+GET http://localhost:3001/api/users/63092c695cded5198c758e9e
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+# esto es un request body
+{
+    "name": "test2",
+    "age": 29,
+    "email": "test2@test2.com"
+}
+
+### UPDATE USER 
+PUT http://localhost:3001/api/users/63092ce05cded5198c758ea0
+Content-Type: application/json
+
+# esto es un request body
+{
+    "name": "test22222",
+    "age": 29,
+    "email": "test2@test2.com"
+}
+ 
+### DELETE AN USER
+DELETE http://localhost:3001/api/users/63092ce05cded5198c758ea0
